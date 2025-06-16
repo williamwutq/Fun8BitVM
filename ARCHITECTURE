@@ -1,0 +1,13 @@
+ARCHITECTURE
+
+# All values and pointers are initialized with 0x00 on VM startup
+
+A uint_8                # Accumulator
+ROM uint_8[]            # Program ROM
+RAM uint_8[]            # Program memory
+ROM PTR STACK uint_8[]  # Program ROM pointer stack for addressing in ROM
+RAM PTR STACK uint_8[]  # Program RAM pointer stack for addressing in RAM
+ROM SIZE 256            # Total ROM registers
+RAM SIZE 256            # Total RAM registers
+ROM PTR STACK 16        # Total ROM addresses in ROM pointer stack
+RAM PTR STACK 16        # Total RAM addresses in ROM pointer stack
